@@ -1,0 +1,29 @@
+Client Kick-off: Globex Corp Website Redesign
+
+Date: August 1, 2024
+Attendees:
+- Anna (Project Lead)
+- Leo (Tech Lead)
+- Mr. Thompson (Client - Globex Corp)
+
+Agenda:
+1. Introductions & Project Goals
+2. Scope Confirmation
+3. Timeline Review
+4. Next Steps
+
+Key Points Discussed:
+- Mr. Thompson reiterated that the primary goal is to modernize the user interface and improve mobile performance.
+- The project scope was confirmed to include the main marketing website and the blog. The e-commerce portal is officially out of scope for Phase 1 and will be addressed in a future project.
+- Leo confirmed the tech stack will be a headless CMS with a React frontend. The client agreed, pending a review of the chosen CMS.
+- We will hold weekly check-in meetings every Tuesday at 10:00 AM. The first one will be next Tuesday, August 8th.
+
+Decisions Made:
+- The e-commerce portal is formally out of scope for Phase 1.
+- The project will proceed with a headless CMS architecture.
+- Weekly check-in meetings are confirmed for Tuesdays at 10:00 AM.
+
+Action Items / Next Steps:
+- Mr. Thompson (Globex) is to provide all brand assets (logos, fonts, color codes) by Friday, August 4th.
+- Anna (Our Team) will deliver the initial wireframe mockups to the client by August 15th.
+- Leo (Our Team) is responsible for setting up the staging environment. This needs to be completed by EOD Monday, August 7th.
