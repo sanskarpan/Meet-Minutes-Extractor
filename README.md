@@ -7,6 +7,15 @@ A full-stack application that automatically extracts structured information from
 ![Frontend](https://img.shields.io/badge/Frontend-React-61dafb)
 ![AI](https://img.shields.io/badge/AI-OpenAI%20GPT-orange)
 
+## Demo
+
+<div align="center">
+  <img src="images/img2.png" alt="Meeting Minutes Extractor Interface" width="45%" />
+  <img src="images/img3.png" alt="Extraction Results" width="45%" />
+</div>
+
+**[Watch Demo Video here](https://drive.google.com/file/d/1qZ0yksRqzjJ1-xESavRMq7A1HMfgyG_t/view?usp=sharing)**
+
 ## Features
 
 ### Backend
