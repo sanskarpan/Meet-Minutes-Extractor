@@ -250,10 +250,29 @@ Processes meeting notes and extracts structured information using AI.
   }
 }
 ```
-
-**File Upload**:
+**POST /process-meeting Example cURL**
 ```bash
-curl -X POST -F "file=@meeting.txt" http://localhost:3000/process-meeting
+curl -X POST http://localhost:3000/process-meeting \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "Team meeting on June 1st. Decided to launch product on June 15th. John will prepare documentation by June 10th.",
+    "extractionOptions": {
+      "includeSummary": true,
+      "includeDecisions": true,
+      "includeActionItems": true,
+      "maxSummaryLength": 2
+    }
+  }'
+```
+
+
+**cURL for File Upload**:
+```bash
+# Using a sample file from the project
+curl -X POST -F "file=@backend/samples/meeting2.txt" http://localhost:3000/process-meeting
+
+# Using your own file
+curl -X POST -F "file=@/path/to/your/meeting.txt" http://localhost:3000/process-meeting
 ```
 
 **Response**:
