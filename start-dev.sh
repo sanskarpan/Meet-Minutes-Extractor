@@ -29,7 +29,7 @@ check_port() {
 }
 
 # Check if required ports are available
-echo "🔍 Checking port availability..."
+echo "Checking port availability..."
 if ! check_port 3000; then
     echo "Backend port 3000 is in use. Please stop the process using port 3000."
     exit 1
