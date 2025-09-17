@@ -93,10 +93,22 @@ ${text}
 
 Important guidelines:
 - Extract information only from the provided text
-- If no information is available for a section, use an empty array []
-- For action items without clear owners or deadlines, use null
-- Keep the summary concise and relevant
-- Focus on concrete decisions and actionable items`;
+- If no information is available for a section, use an empty array []`;
+
+    if (includeActionItems) {
+        prompt += `
+- For action items without clear owners or deadlines, use null`;
+    }
+    
+    if (includeSummary) {
+        prompt += `
+- Keep the summary concise and relevant`;
+    }
+    
+    if (includeDecisions || includeActionItems) {
+        prompt += `
+- Focus on concrete ${includeDecisions ? 'decisions' : ''}${includeDecisions && includeActionItems ? ' and ' : ''}${includeActionItems ? 'actionable items' : ''}`;
+    }
 
     return prompt;
     }
