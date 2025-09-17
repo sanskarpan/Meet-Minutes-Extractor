@@ -15,15 +15,15 @@
 - [X] Set up package.json scripts
 
 ### 1.2 Project Structure
-- [ ] Create `src/` directory for source code
-- [ ] Create `controllers/` for request handlers
-- [ ] Create `services/` for business logic
-- [ ] Create `middleware/` for custom middleware
-- [ ] Create `utils/` for helper functions
-- [ ] Create `config/` for configuration files
-- [ ] Create `tests/` for test files
-- [ ] Create `uploads/` for temporary file storage
-- [ ] Create `samples/` for sample meeting notes
+- [X] Create `src/` directory for source code
+- [X] Create `controllers/` for request handlers
+- [X] Create `services/` for business logic
+- [X] Create `middleware/` for custom middleware
+- [X] Create `utils/` for helper functions
+- [X] Create `config/` for configuration files
+- [X] Create `tests/` for test files
+- [X] Create `uploads/` for temporary file storage
+- [X] Create `samples/` for sample meeting notes
 
 ## Phase 2: Core API Development
 
