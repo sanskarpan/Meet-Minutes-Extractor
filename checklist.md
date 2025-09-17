@@ -135,9 +135,22 @@
 - [X] Write troubleshooting guide
 - [X] Document environment variables
 
-## Phase 7: Final Testing & Delivery 
+## Phase 7: Frontend for testing backend
 
-### 7.1 Final Validation
+### 7.1 Basic Frontend
+* [ ] Initialize React app in `frontend/` using Create React App 
+* [ ] Set up project structure 
+* [ ] Implement file upload UI that calls `POST /process-meeting` from the backend
+* [ ] Display extracted meeting summary, key decisions, and action items returned by backend
+* [ ] Add error handling and loading states in the UI
+* [ ] Style the frontend with a **dark terminal-like theme** inspired by the attached image (grid background, monospaced font, subtle neon highlights)
+* [ ] Configure environment variable for backend API URL
+* [ ] Test full flow: upload → backend processing → results displayed
+* [ ] Write some basic tests for the frontend
+
+## Phase 8: Final Testing & Delivery 
+
+### 8.1 Final Validation
 - [ ] End-to-end system testing
 - [ ] Performance benchmarking
 - [ ] Security vulnerability scan
@@ -145,7 +158,7 @@
 - [ ] Sample file validation
 - [ ] API endpoint testing with various clients
 
-### 7.2 Delivery Preparation
+### 8.2 Delivery Preparation
 - [ ] Clean up temporary files and logs
 - [ ] Finalize README with examples
 - [ ] Package project files
