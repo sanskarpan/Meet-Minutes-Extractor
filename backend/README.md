@@ -25,24 +25,18 @@ A Node.js backend service that processes meeting notes and automatically extract
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd ai-meeting-minutes-extractor
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Set up environment variables:
+2. Set up environment variables:
 ```bash
 cp .env.example .env
 # Edit .env and add your OpenAI API key
 ```
 
-4. Start the server:
+3. Start the server:
 ```bash
 # Development mode with auto-reload
 npm run dev
