@@ -43,7 +43,10 @@ class AIService {
         const response = completion.choices[0].message.content;
             return this.parseAIResponse(response);
     } catch (error) {
-    console.error('OpenAI API Error:', error);
+        // Log error details for debugging (in production, use proper logging service)
+        if (process.env.NODE_ENV !== 'production') {
+            console.error('OpenAI API Error:', error);
+        }
         
         if (error.code === 'rate_limit_exceeded') {
             throw new Error('AI service rate limit exceeded. Please try again later.');
@@ -53,7 +56,11 @@ class AIService {
             throw new Error('AI service quota exceeded. Please contact administrator.');
         }
         
-        throw new Error(`AI processing failed: ${error.message}`);
+        // Don't expose internal error details in production
+        const errorMessage = process.env.NODE_ENV === 'production' 
+            ? 'AI processing failed. Please try again.' 
+            : `AI processing failed: ${error.message}`;
+        throw new Error(errorMessage);
     }
     }
 
@@ -133,7 +140,10 @@ Important guidelines:
 
             return result;
         } catch (error) {
-            console.error('Failed to parse AI response:', response);
+            // Log parsing errors for debugging (in production, use proper logging service)
+            if (process.env.NODE_ENV !== 'production') {
+                console.error('Failed to parse AI response:', response);
+            }
             throw new Error('Invalid AI response format');
         }
     }
