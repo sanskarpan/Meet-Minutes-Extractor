@@ -6,6 +6,7 @@ const meetingSchema = Joi.object({
         then: Joi.optional(),
         otherwise: Joi.required()
     }),
+    file: Joi.object().optional(), // Allow file object when present
     format: Joi.string().valid('json').default('json'),
     extractionOptions: Joi.object({
         includeSummary: Joi.boolean().default(true),
