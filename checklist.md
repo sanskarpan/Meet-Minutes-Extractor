@@ -138,15 +138,14 @@
 ## Phase 7: Frontend for testing backend
 
 ### 7.1 Basic Frontend
-* [ ] Initialize React app in `frontend/` using Create React App 
-* [ ] Set up project structure 
-* [ ] Implement file upload UI that calls `POST /process-meeting` from the backend
-* [ ] Display extracted meeting summary, key decisions, and action items returned by backend
-* [ ] Add error handling and loading states in the UI
-* [ ] Style the frontend with a **dark terminal-like theme** inspired by the attached image (grid background, monospaced font, subtle neon highlights)
-* [ ] Configure environment variable for backend API URL
-* [ ] Test full flow: upload → backend processing → results displayed
-* [ ] Write some basic tests for the frontend
+* [X] Initialize React app in `frontend/` using Create React App 
+* [X] Set up project structure 
+* [X] Implement file upload UI that calls `POST /process-meeting` from the backend
+* [X] Display extracted meeting summary, key decisions, and action items returned by backend
+* [X] Add error handling and loading states in the UI
+* [X] Style the frontend with a **dark terminal-like theme** inspired by the attached image (grid background, monospaced font, subtle neon highlights)
+* [X] Test full flow: upload → backend processing → results displayed
+* [X] Write some basic tests for the frontend
 
 ## Phase 8: Final Testing & Delivery 
 
