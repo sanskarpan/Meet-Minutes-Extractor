@@ -206,7 +206,7 @@ RATE_LIMIT_MAX_REQUESTS=10
 
 The interface is designed to match a cyberpunk/terminal aesthetic:
 
-- **Color Scheme**: Dark background (#0a0a0a) with bright green text (#ff4d00)
+- **Color Scheme**: Dark background (#0a0a0a) with bright orange text (#ff4d00)
 - **Typography**: Monospace fonts (Courier New, JetBrains Mono, Fira Code)
 - **Grid Pattern**: Subtle green grid overlay for depth
 - **Glowing Effects**: Focus states with green glow effects
